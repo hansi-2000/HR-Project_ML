@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Management</title>
+    <style>
+        body {
+            background: url('https://emeritus.org/in/wp-content/uploads/sites/3/2022/03/What-is-Human-Resource-Management-1.jpg.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #FFFFFF;
+            font-size: 3em;
+            margin-bottom: 30px;
+            font-weight: 600;
+            margin-left:70px;
+            margin-top: 80px;
+          }
+        .button-container {
+            margin-top: 60px;
+            margin-left:70px;
+        }
+        .big-button {
+            width: 270px;
+            height: 70px;
+            font-size: 1.5em;
+            font-weight: 540;
+            color: #FFFFFF !important; 
+            background-color: rgba(55, 160, 190, 60);
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            border: none;
+            margin-bottom: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .big-button:hover {
+            background-color: rgba(45, 170, 95, 10);
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Attrition Management</h1>
+
+    <div class="button-container">
+        <a href="{{ url_for('predict') }}" class="big-button">Attrition Prediction</a>
+        <a href="{{ url_for('statistics') }}" class="big-button">Statistics of Data</a>
+        <a href="{{ url_for('attrition_management') }}" class="big-button">Attrition Management</a>
+    </div>
+
+</body>
+</html>
