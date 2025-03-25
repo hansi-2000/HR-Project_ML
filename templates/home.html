@@ -20,6 +20,16 @@
             margin-left:70px;
             margin-top: 80px;
           }
+          .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;   
+        }
+        .logo {
+            width: 180px;  /* Adjust size */
+            height: auto;  /* Maintain aspect ratio */
+            margin-bottom: 180px;
+        }
         .button-container {
             margin-top: 60px;
             margin-left:70px;
@@ -44,9 +54,16 @@
         .big-button:hover {
             background-color: rgba(45, 170, 95, 10);
         }
+      
     </style>
 </head>
 <body>
+
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Company Logo" class="logo">
+
+    </div>
+
     <h1>Employee Attrition Management</h1>
 
     <div class="button-container">
